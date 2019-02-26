@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+   <!-- 直接引用 -->
+  <script src="../lib/index.min.js"></script>
+</head>
+<body>
+  <div class="area" style="width:60px">
+
+  </div>
+  <script>
+    var config = {
+      el: '.area',
+      action: '/',
+      // addImg: 'http://www.ctps.cn/PhotoNet/Profiles2011/20160311/20163111610178319.jpg',
+      imageStyle: {width: 200, height: 200, opacity: 0.3},
+      addPos: ['center', 'middle'],
+      repeat: 'repeat-x' ,
+      addFonts: ['sdscdscdsc', 'rgtrtrhtrhytywedwedwedwdewedwedwedwedwe'],
+      onError: function (msg) {
+        console.error(msg)
+      },
+      headers: {
+        token: 'scdsdcsdcdc'
+      },
+      fontsAlign: 'left',
+      lineSpace: 20,
+    }
+    // 直接引用的方式
+    createUpload.init(config)
+  </script>
+</body>
+</html>
