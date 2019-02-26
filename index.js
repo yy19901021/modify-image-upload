@@ -83,12 +83,16 @@ let initUpload = function (config) {
   uploadEl.innerHTML = getHtmlTemplate(config.contentHtml)
   let FileUpload = document.querySelector('#FileUpload')
   document.querySelector('#UploadBtn').onclick = function () {
+    FileUpload.value = ''
     if (!config.startUpload || config.startUpload()) {
       FileUpload.click()
     }
   }
   let file;
   FileUpload.onchange = function (event) {
+    if (!event.target.value) {
+      return
+    }
     file = event.target.files[0]
     if (!Tools.imageIsOk(file, config)) return 
     Tools.createImage(file, config)

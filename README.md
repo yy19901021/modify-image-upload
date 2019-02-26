@@ -31,8 +31,8 @@ Html
 
 | 参数key |类型 | 描述 |
 | :-------: | :------: | :--------------------------- |
-|el|String|元素选择器（#id）|
-|action|String|上传路径|
+|el|String|元素选择器（#id）*必填|
+|action|String|上传路径 *必填|
 |contentHtml|String|替换原始按钮（html字符串）|
 |quality|Number|图片压缩后的质量 默认0.9|
 |maxSize|Number|图片上传最大尺寸（kb）默认4096Kb|

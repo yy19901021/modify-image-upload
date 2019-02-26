@@ -105,14 +105,13 @@ function createCanvas (config, width, height, uploadImage) {
   ctx.save();
   if (config.addFonts || Array.isArray(config.addFonts)) {
     drawFonts(ctx, config)
-    document.body.appendChild(canvasEl)
     uploadImageToServer(canvasEl, config)
-  }
-  if (config.addImg) {
+  } else if (config.addImg) {
     drawPicture(ctx, config, function() {
-      document.body.appendChild(canvasEl)
       uploadImageToServer(canvasEl, config)
     })
+  } else {
+    uploadImageToServer(canvasEl, config)
   }
  
   
@@ -139,6 +138,7 @@ function httpPost (config, file) {
 
 // 上传图片
 function uploadImageToServer (canvasEl, config) {
+  console.log('ssdcscdsc')
   canvasEl.toBlob(function (res) {
     let file = new File([res], config.fileName, {fileType: config.fileType, filePath: config.filePath})
     let fileData = new FormData()
