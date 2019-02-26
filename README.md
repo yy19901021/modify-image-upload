@@ -3,11 +3,14 @@
   *上传图片组件（在上传图片时可以对图片进行修改，增加文字、水印、压缩图片质量等）*
 
 ## Install
-###npm 安装使用
+### npm 安装使用
 ```
    npm install modify-image-upload --save
-   import UploadImage from "modify-image-upload" 
+
+   import UploadImage from "modify-image-upload"
+
    或者
+   
    const UploadImage = reqiure("modify-image-upload")
 ```
 ### 直接引用
@@ -17,10 +20,10 @@ Html
 <script src="../lib/index.min.js"></script>
 ....
 <body>
-<script>
-     var config = {}
-	 createUpload.init(config)
-</script>
+  <script>
+    var config = {}
+    createUpload.init(config)
+  </script>
 </body>
 ```
 ## 参数介绍
