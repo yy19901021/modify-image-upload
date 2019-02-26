@@ -50,7 +50,7 @@ const defaultConfigArr = [
 
 
 let getHtmlTemplate = function (contentHtml) {
-  let defaultHtml = '<div style="background: #2973b7;width:100%; padding:5px 10px; height: 20px; color: #fff; line-height: 20px; font-size: 14px; border-radius: 4px; border: 1px solid #ccc;">上传图片</div>';
+  let defaultHtml = '<div style="box-sizing: content-box;text-align:center; background: #2d8cf0;width:100%; padding:5px 10px; height: 20px; color: #fff; line-height: 20px; font-size: 14px; border-radius: 4px; border: 1px solid #ccc;">上传图片</div>';
   return '<div id="UploadBtn" style="cursor: pointer">'+ (!contentHtml ? defaultHtml :  contentHtml) +' <input type="file" name="FileUpload" id="FileUpload" style="display: none;"></div>'
 }
 let formatConfig = function (config) {

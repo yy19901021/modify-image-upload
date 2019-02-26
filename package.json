@@ -1,6 +1,6 @@
 {
   "name": "modify-image-upload",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "上传图片组件（在上传图片时可以对图片进行修改，增加文字、水印、压缩图片质量等）",
   "main": "lib/index.es5.js",
   "scripts": {
@@ -19,5 +19,21 @@
     "babel-preset-env": "^1.7.0",
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3"
-  }
+  },
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yy19901021/modify-image-upload.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yy19901021/modify-image-upload/issues"
+  },
+  "homepage": "https://github.com/yy19901021/modify-image-upload#readme"
 }
